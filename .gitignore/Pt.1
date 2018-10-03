@@ -1,0 +1,39 @@
+function setup() {
+
+	createCanvas(700,700);
+	background(210);
+//for(i= 0, i < 3,)
+	//rotate()
+	//rect()
+	//map(mouseX, min, max , 0 , 2pi)
+}
+
+
+function draw (){
+
+	push();
+		translate(200,420);
+		rotate(5*PI/4);
+		fill(255,0,0);
+		rect(0,0,150,150); 
+	pop();
+
+	push();
+		translate(400,350);
+		rotate(PI/5);
+		fill(0,255,0);
+		rect(0,0,40,40); 
+	pop();
+
+	push();
+		translate(550,350);
+		rotate(PI/7);
+		fill(0,0,255);
+		rect(0,0,100,100); 
+	pop();
+
+
+
+}
+
+
