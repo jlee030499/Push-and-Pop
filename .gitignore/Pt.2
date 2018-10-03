@@ -1,0 +1,25 @@
+function setup() {
+	createCanvas(400, 400);
+	rectMode(CENTER);
+}
+
+function draw(){
+	background(210);
+
+	
+	for(var i = 0; i < 10; i++) {
+
+		var blue = map(i, 0, 10, 255,150); 
+		var red = map(i, 0, 4, 255,150);
+		
+		fill(red,0,blue);
+		
+		
+		push();
+		translate(width/2, height/2);
+		rotate(2 *PI * i / 10);
+		rect(120, 0, 25, 30);
+		pop();
+	}
+	
+}
