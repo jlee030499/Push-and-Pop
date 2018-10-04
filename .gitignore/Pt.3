@@ -1,0 +1,43 @@
+function setup(){
+	createCanvas(600,600);
+	background(210);
+}
+function draw() {
+	var deg = mouseX/PI/2;
+	var oo = (mouseX/PI);
+	var radd = radians(oo);
+	var rad = radians(deg);
+
+	background(240);
+
+	// the red rectangle is drawn before the rotation so
+	// it will stay in place
+	fill(255, 0, 0);
+
+	push();
+	rotate(rad);
+	translate(width/2, length/2);
+	rect(200, 200, 30, 30);
+	pop();
+	
+	fill(0,255,0);
+	push();
+	rotate(radd);
+	translate (width/3, length/3);
+	rect(200,200,40,10);
+	pop();
+
+	fill(0,0,255);
+	push();
+	rotate(radd*2); 
+	translate(width/4, length/4);
+	rect(200,200, 30,20);
+	pop();
+
+
+
+
+
+
+	}
+	
